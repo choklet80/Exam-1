@@ -1,0 +1,34 @@
+.overview{
+    min-height: 100vh;
+    background-image: url(../img/spain-house.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 320px;
+
+    &--mountain{
+        background-image: url(../img/mountain.jpg);
+    }
+}
+
+.book-now{
+    max-width: 540px;
+    min-height: 350px;
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: rgba(0, 0, 0, 0.789);
+    padding: 35px 25px;
+    
+    &__country{
+        margin-bottom: 20px;
+    }
+
+    &__caption{
+        font-weight: 300;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+
+    &__paragraph{
+        line-height: 25px;
+    }
+}

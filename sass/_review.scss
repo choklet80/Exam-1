@@ -1,0 +1,41 @@
+.review{
+    min-height: 100vh;
+    background: url(../img/man-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 150px;
+    &__title{
+        font-family: 'Aleo', serif;
+        font-weight: 400;
+        text-align: center;
+        font-size:36px;
+        margin-bottom: 80px;
+        
+    }
+
+
+    &__info{
+        font-family: 'Josefin Sans', sans-serif;
+        line-height: 25px;
+        &--f-word{
+            padding-left: 30px;
+        }
+    }
+}
+
+.review-card{
+    background-color: #333333;
+    padding: 60px;
+    &__name{
+        text-transform: uppercase;
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 300;
+        margin-bottom: 30px;
+    }
+}
+
+.quote{
+    color: #5474fd;
+    font-size: 22px;
+}

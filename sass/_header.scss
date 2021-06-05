@@ -9,27 +9,140 @@
     text-align: center;
     position: relative;
     &__title{
-        font: 48px;
+        font-size: 46px;
         text-transform: uppercase;
-        font-weight: 500;
+        font-weight: 400;
         padding-top: 268px;
         letter-spacing: 2px;
+        
     }
     &__subtitle{
+        letter-spacing: 8px;
+        font-size: 20px;
+        margin-top: 5px;
+    }
+
+    &__scroll-down{
+        max-width: 103px;
+        margin: 0 auto;
+        min-height: 512px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         letter-spacing: 2px;
+        opacity: .8;
+        z-index: 1;
+
+        a{
+            text-decoration: none;
+            color: white;
+        }
     }
 }
 
 .search{
-    margin-top: 50px;
-    max-width: 500px;
+    max-width: 635px;
     margin: 0 auto;
+    color: #999999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
 
+    &__button{
+        text-transform: uppercase;
+        font-family: "Aleo", serif;
+        font-size: 14px;
+        font-weight: 400;
+        display: flex;
+        background-color: #5474fd;
+        color: rgba(255, 255, 255, 0.802);
+        width: 130px;
+        height: 50px;
+        justify-content: center;
+        align-items: center;
+        line-height: 15px;
+        letter-spacing: 1px;
+        fill: rgba(255, 255, 255, 0.802);
+        outline: 2px solid white;
+        cursor: pointer;
+    }
+    &__button:hover svg{
+        transform: scale(1.2);
+    }
 }
+
+.svg{
+    transition: transform 0.5s;
+}
+
+.search-button-p{
+    margin-right: 15px;
+}
+
+.search-placeholder{
+    max-width: 505px;
+    background-color: white;
+    flex-grow: 1;
+    min-height: 54px;
+    text-align: center;
+    letter-spacing: 2px;
+    border-color: none;
+}
+
+.search-placeholder:focus-visible{
+    outline-offset: none;
+}
+.search-placeholder:focus{
+    outline-offset: none;
+}
+
 
 .container{
     max-width: 1110px;
     margin: 0 auto;
+
+    &--why-us{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &--why-us-icon{
+        display: flex;
+        justify-content: space-around;
+        min-height: 337px;
+        align-items: center;
+        position: relative;
+    }
+
+    &--left{
+        display: flex;
+        justify-content: flex-end;
+    }
+    &--f{
+        display: flex;
+    }
+}
+
+.pics{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 10px;
+}
+
+.tropic-village{
+    align-self: center;
+    width: 350px;
+    height: 220px;
+    margin: 2px;
+}
+
+.small-mountain{
+    width: 350px;
+    height: 220px;
+    margin: 2px;
+    align-self: flex-end;
 }
 
 .navs{
@@ -51,6 +164,13 @@
         margin: 0 10px;
         float: right;
         line-height: 22px;
+        &--f{
+            margin-left: 0;
+        }
+
+        &--l{
+            margin-right: 0;
+        }
     }
     .nav:nth-child(1){
         font-family: 'Josefin Sans', sans-serif;
