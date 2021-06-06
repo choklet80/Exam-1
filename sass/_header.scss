@@ -56,11 +56,25 @@
     }
 }
 
+
+
 .d-f{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    .div{
+        margin: 1px;
+        transition: border-bottom 1s;
+    }
+    .div{
+        border-bottom: 1px rgba(255, 255, 255, 0) solid;
+    }
+    .div:hover{
+        border-bottom: 1px white solid;
+    }
 }
+
+
 
 .search{
     max-width: 635px;

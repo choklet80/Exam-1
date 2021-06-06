@@ -96,6 +96,16 @@ body {
   flex-wrap: wrap;
   justify-content: center;
 }
+.d-f .div {
+  margin: 1px;
+  transition: border-bottom 1s;
+}
+.d-f .div {
+  border-bottom: 1px rgba(255, 255, 255, 0) solid;
+}
+.d-f .div:hover {
+  border-bottom: 1px white solid;
+}
 
 .search {
   max-width: 635px;
