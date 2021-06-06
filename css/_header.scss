@@ -115,7 +115,6 @@
         transform: scale(1.0);
     }
     &__button:active{
-            border: 2px solid #5474fd;
             background-color: #637ff8;
     }
     
@@ -136,10 +135,14 @@
     min-height: 54px;
     text-align: center;
     letter-spacing: 2px; 
+    font-family: "Aleo", serif;
+    border-left: 5px solid #637ef800;
+    transition: border-left 0.3s;
 }
 
 .search-placeholder:focus-visible{
     outline: none;
+    border-left: 5px solid #2440bd;
 }
 
 .search-placeholder::placeholder{
@@ -206,14 +209,14 @@
 }
 
 .navs{
-    position: absolute;
+    position:absolute;
     bottom: 0;
     left: 0;
     padding: 20px 0;
     background-color: rgb(0, 102, 255);
     width: 100%;
     vertical-align: center;
-    
+    z-index: 2;
     .nav{
         text-decoration: none;
         color:white;

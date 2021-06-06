@@ -147,7 +147,6 @@ body {
   transform: scale(1);
 }
 .search__button:active {
-  border: 2px solid #5474fd;
   background-color: #637ff8;
 }
 
@@ -166,10 +165,14 @@ body {
   min-height: 54px;
   text-align: center;
   letter-spacing: 2px;
+  font-family: "Aleo", serif;
+  border-left: 5px solid #637ef800;
+  transition: border-left 0.3s;
 }
 
 .search-placeholder:focus-visible {
   outline: none;
+  border-left: 5px solid #2440bd;
 }
 
 .search-placeholder::-moz-placeholder {
@@ -250,6 +253,7 @@ body {
   background-color: #0066ff;
   width: 100%;
   vertical-align: center;
+  z-index: 2;
 }
 .navs .nav {
   text-decoration: none;
@@ -326,14 +330,16 @@ body {
   background-color: #0066ff;
   font-family: "Aleo", serif;
   margin-top: 40px;
-  transition: transform 1s;
+  transition: all 1s;
   cursor: pointer;
 }
 .information__button:hover {
   transform: scale(1.05);
+  background-color: #0251c9;
 }
 .information__button:active {
   transform: scale(0.9);
+  background-color: #3787ff;
 }
 
 .item {
