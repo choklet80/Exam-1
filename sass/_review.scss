@@ -26,16 +26,27 @@
 
 .review-card{
     background-color: #333333;
-    padding: 60px;
+    padding: 40px 60px;
+    max-width: 645px;
+    min-height: 284px;
     &__name{
         text-transform: uppercase;
         font-family: 'Josefin Sans', sans-serif;
         font-weight: 300;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
 }
 
 .quote{
     color: #5474fd;
     font-size: 22px;
+}
+
+.img{
+    width: 100%;
+    height: 100%;
+    &--review{
+        max-width:445px;
+        max-height: 284px;
+    }
 }
