@@ -135,21 +135,16 @@
     flex-grow: 1;
     min-height: 54px;
     text-align: center;
-    letter-spacing: 2px;
-    border-color: none;
+    letter-spacing: 2px; 
+}
+
+.search-placeholder:focus-visible{
+    outline: none;
 }
 
 .search-placeholder::placeholder{
     letter-spacing: 2px;
 }
-
-.search-placeholder:focus-visible{
-    outline-offset: none;
-}
-.search-placeholder:focus{
-    outline-offset: none;
-}
-
 
 .container{
     max-width: 1110px;

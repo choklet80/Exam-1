@@ -166,7 +166,10 @@ body {
   min-height: 54px;
   text-align: center;
   letter-spacing: 2px;
-  border-color: none;
+}
+
+.search-placeholder:focus-visible {
+  outline: none;
 }
 
 .search-placeholder::-moz-placeholder {
@@ -179,14 +182,6 @@ body {
 
 .search-placeholder::placeholder {
   letter-spacing: 2px;
-}
-
-.search-placeholder:focus-visible {
-  outline-offset: none;
-}
-
-.search-placeholder:focus {
-  outline-offset: none;
 }
 
 .container {
